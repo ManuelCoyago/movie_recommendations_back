@@ -2,7 +2,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import SessionLocal
-from models import MovieModel, Movie, MovieResponse
+from models import MovieModel
+from schemas import MovieResponse,Movie
 from typing import List
 from dependencies import get_db
 
